@@ -471,10 +471,9 @@ def plot_forecast_error_over_time(model, df, actual_col, forecast_col):
     plt.title(f"{model.model_name} Forecasting Error (%)")
     plt.xlabel('Time')
     plt.ylabel('Forecast Error (%)')
-    plt.grid(True)
+    plt.grid(False)
     plt.legend()
     plt.tight_layout()
-    plt.grid(False)
     plt.savefig(f"{model.model_name}_forecast_errors.png", dpi=300, bbox_inches='tight')
     plt.show()
 
